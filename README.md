@@ -72,10 +72,6 @@ Extends the processor by incorporating the FSM output into the ALU and modifying
 
 ---
 
-## Learning Outcomes
+## Key Takeaways
 
-- Sequential and combinational circuit design
-- FSM implementation
-- ALU architecture
-- Modular VHDL design
-- FPGA synthesis and hardware verification
+This project bridged theoretical digital systems concepts with practical FPGA implementation by designing a complete processor from the ground up. Integrating the ALU, registers, decoder, and FSM in VHDL, I gained hands-on experience with modular design, simulation, and hardware verification on the DE2 board. The three ALU iterations pushed me to optimize operation selection, incorporate control logic into datapath decisions, and interface with the seven-segment display for meaningful output. Debugging state transitions, ensuring proper clock synchronization, and verifying correct operation on actual hardware reinforced the importance of systematic testing and timing analysis. This project solidified my understanding of processor architecture at the gate level and built confidence in designing, simulating, and deploying complex digital systems using industry-standard tools.
