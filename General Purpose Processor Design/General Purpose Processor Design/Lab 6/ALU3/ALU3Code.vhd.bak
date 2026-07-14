@@ -1,0 +1,36 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+
+entity ALU2 is -- ALU unit includes Reg. 3
+    port (
+        clk    : in std_logic;
+        A, B   : in unsigned(7 downto 0); -- 8-bit inputs A & B from Reg. 1 & Reg. 2
+        opcode : in unsigned(15 downto 0); -- 8-bit opcode from Decoder
+		  id 		: in unsigned(3 downto 0);
+        Neg    : out std_logic;
+        R1, R2 : out unsigned(3 downto 0)
+    );
+end ALU2;
+
+architecture calculation of ALU2 is
+    signal Reg1, Reg2, Result : unsigned(7 downto 0) := (others => '0');
+	 signal flip : unsigned(0 to 7);
+begin
+    Reg1 <= A;
+    Reg2 <= B;
+
+    process(clk)
+    begin
+        if rising_edge(clk) then
+		  Result <= id(0);
+        end if;
+    end process;
+
+    -- Assigning 4-bit outputs
+    R1 <= Result(3 downto 0); -- Lower 4 bits
+    R2 <= Result(7 downto 4); -- Upper 4 bits
+end calculation;
+

@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Matt\Documents\COE 328\Lab 6 W- ALU2\Lab 6\simulation\qsim
+vALU
+Z1 ISc6R[>O4`j=dDnVX=bl=M2
+Z2 VmTcbJ5i60K5CMdLbbR_oh1
+Z3 dC:\Users\Matt\Documents\COE 328\Lab 6 W- ALU2\Lab 6\simulation\qsim
+Z4 w1732725529
+Z5 8lab6.vo
+Z6 Flab6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|lab6.vo|
+Z9 o-work work -O0
+Z10 n@a@l@u
+!i10b 1
+Z11 !s100 NY6d?WJedOIQ:GFZ[M=T=1
+!s85 0
+Z12 !s108 1732725530.885000
+Z13 !s107 lab6.vo|
+!s101 -O0
+vALU1
+Z14 !s100 C:a6HD:NmL@F[UAUAi[Wl3
+Z15 IkY44Q8ATAGdnHRjjZd70J3
+Z16 VJZDB_8CIGdhEJ]9V@_8IB0
+R3
+Z17 w1732725409
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z18 n@a@l@u1
+Z19 !s108 1732725410.534000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vALU1_vlg_check_tst
+Z20 !s100 B8m7]Mka6o<]4ln_l8j_73
+Z21 INEiOPIOOQHUP4WTIhZ3cU2
+Z22 V0mI1I342gNeA?]nNPCC@83
+R3
+Z23 w1732725407
+Z24 8lab6.vt
+Z25 Flab6.vt
+L0 63
+R7
+r1
+31
+Z26 !s108 1732725410.686000
+Z27 !s107 lab6.vt|
+Z28 !s90 -work|work|lab6.vt|
+R9
+Z29 n@a@l@u1_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vALU1_vlg_sample_tst
+Z30 !s100 f@Q0O2XhYWYAakiELIb^g2
+Z31 I>@zX30dk84JT^EH^SK0m=1
+Z32 V<zXeKBS_1f8>=BhJghn6=2
+R3
+R23
+R24
+R25
+L0 29
+R7
+r1
+31
+R26
+R27
+R28
+R9
+Z33 n@a@l@u1_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vALU1_vlg_vec_tst
+Z34 !s100 V??@QJL:hbG[EO]5[FkDY0
+Z35 I9DPnnQ`eM7`7]59J2L8X]3
+Z36 Vz[I2=bfC2H_caYSiN2oe52
+R3
+R23
+R24
+R25
+Z37 L0 168
+R7
+r1
+31
+R26
+R27
+R28
+R9
+Z38 n@a@l@u1_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vALU_vlg_check_tst
+!i10b 1
+!s100 =khL;9VPOZ:BDjbG4`MFk2
+IO_z0a^VfJb>C23@Tj0?6i0
+Z39 VfMJR:99TM]Y1I;f::5Yz`2
+R3
+Z40 w1732725528
+R24
+R25
+L0 73
+R7
+r1
+!s85 0
+31
+Z41 !s108 1732725531.038000
+Z42 !s107 lab6.vt|
+R28
+!s101 -O0
+R9
+Z43 n@a@l@u_vlg_check_tst
+vALU_vlg_sample_tst
+!i10b 1
+Z44 !s100 WnV>7fAFn^B70ze9Jz9jR0
+Z45 I:bg<XC>:F6>V;Vg<NYzaz1
+Z46 V=zYS0lZX`@zcb[K0f=VIU2
+R3
+R40
+R24
+R25
+L0 29
+R7
+r1
+!s85 0
+31
+R41
+R42
+R28
+!s101 -O0
+R9
+Z47 n@a@l@u_vlg_sample_tst
+vALU_vlg_vec_tst
+!i10b 1
+!s100 GLUD34OTWHnnnWQK8Rbc20
+II@KE28C7>bG`L>MzeTzjI3
+Z48 V>bFnnU[^IecCM5^<l3;]W0
+R3
+R40
+R24
+R25
+Z49 L0 328
+R7
+r1
+!s85 0
+31
+R41
+R42
+R28
+!s101 -O0
+R9
+Z50 n@a@l@u_vlg_vec_tst

@@ -1,0 +1,74 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+entity ALU1 is -- ALU unit includes Reg. 3
+    port (
+        clk    : in std_logic;
+        A, B   : in unsigned(7 downto 0); -- 8-bit inputs A & B from Reg. 1 & Reg. 2
+        opcode : in unsigned(7 downto 0); -- 8-bit opcode from Decoder
+        Neg    : out std_logic;
+        R1, R2 : out unsigned(3 downto 0)
+    );
+end ALU1;
+
+architecture calculation of ALU1 is
+    signal Reg1, Reg2, Result : unsigned(7 downto 0) := (others => '0'); -- 8-bit Result
+begin
+    Reg1 <= A;
+    Reg2 <= B;
+
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            case opcode is
+                when "00000001" => -- Addition
+                    Neg <= '0';
+                    Result <= Reg1 + Reg2;
+
+                when "00000010" => -- Subtraction
+                    if (Reg1 > Reg2) then
+                        Neg <= '1';
+                        Result <= Reg2 - Reg1;
+                    else
+                        Neg <= '0';
+                        Result <= Reg1 - Reg2;
+                    end if;
+
+                when "00000100" => -- Inverse
+                    Neg <= '0';
+                    Result <= not Reg1;
+
+                when "00001000" => -- NAND
+                    Neg <= '0';
+                    Result <= not (Reg1 and Reg2);
+
+                when "00010000" => -- NOR
+                    Neg <= '0';
+                    Result <= not (Reg1 or Reg2);
+
+                when "00100000" => -- AND
+                    Neg <= '0';
+                    Result <= Reg1 and Reg2;
+
+                when "01000000" => -- XOR
+                    Neg <= '0';
+                    Result <= Reg1 xor Reg2;
+
+                when "10000000" => -- OR
+                    Neg <= '0';
+                    Result <= Reg1 or Reg2;
+
+                when others => -- Default case
+                    Result <= (others => '0');
+                    Neg <= '0';
+            end case;
+        end if;
+    end process;
+
+    -- Assigning 4-bit outputs
+    R1 <= Result(3 downto 0); -- Lower 4 bits
+    R2 <= Result(7 downto 4); -- Upper 4 bits
+end calculation;
+

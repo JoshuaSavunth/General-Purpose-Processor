@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity reg2 is
+    port (
+        B: in std_logic_vector(7 downto 0);   -- 8-bit A input
+        res, clk: in std_logic;           -- 1-bit clock input and 1-bit reset input
+        Q: out std_logic_vector(7 downto 0)    -- 8-bit output
+    );
+end reg2;
+
+architecture Behavior of reg2 is
+begin
+    process (res, clk)   -- Process takes reset and clock as inputs
+    begin
+        if res = '0' then   -- when reset input is '0', the latch does not operate
+            Q <= "00000000";
+        elsif (clk'EVENT AND clk = '1') then   -- rising edge sensitive based on clock
+            Q <= B;
+        end if;
+    end process;
+end Behavior;
+
+
+
