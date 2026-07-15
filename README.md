@@ -30,7 +30,7 @@ The processor integrates the following components into a complete datapath and c
 - Seven-segment Display
 
 <p align="center">
-  <img width="800" height="600" alt="ALU1_BlockDiagram" src="https://github.com/user-attachments/assets/5877f242-3fce-48fc-b663-f0f9d650cf9f" />
+  <img width="600" height="450" alt="ALU1_BlockDiagram" src="https://github.com/user-attachments/assets/5877f242-3fce-48fc-b663-f0f9d650cf9f" />
 </p>
 
 ---
@@ -80,7 +80,7 @@ The processor was successfully implemented on the DE2 FPGA board.
 Functional simulations were performed in Quartus to verify correct processor operation before FPGA implementation.
 
 <p align="center">
-  <img src="images/simulation_waveform.png" width="750" alt="Simulation Waveform">
+  <img width="2194" height="505" alt="ALU1_Waveform" src="https://github.com/user-attachments/assets/80fbc2d7-d5b3-4acb-95a0-9107d0e689ba" />
 </p>
 
 ---
