@@ -69,12 +69,9 @@ Extends the processor by incorporating the FSM output into the ALU and modifying
 
 The processor was successfully implemented on the DE2 FPGA board.
 
-<p align="center">
-
-  <img width="400" height="300" alt="ALU1_Demo" src="https://github.com/user-attachments/assets/de90d913-304a-460f-b229-296db06fb0e3" />
-  <img width="400" height="300" alt="ALU2_Demo" src="https://github.com/user-attachments/assets/67b9d9d8-35df-44dd-a567-d8e71eccea16" /> 
-  <img width="400" height="300" alt="ALU3_Demo" src="https://github.com/user-attachments/assets/8adc4d91-98ce-474e-8617-ce7316f923b5" />
-</p>
+| ALU 1 | ALU 2 | ALU 3 |
+|:-----:|:-----:|:-----:|
+| <img src="https://github.com/user-attachments/assets/de90d913-304a-460f-b229-296db06fb0e3" width="320" height="240"> | <img src="https://github.com/user-attachments/assets/67b9d9d8-35df-44dd-a567-d8e71eccea16" width="320" height="240"> | <img src="https://github.com/user-attachments/assets/8adc4d91-98ce-474e-8617-ce7316f923b5" width="320" height="240"> |
 
 ---
 
