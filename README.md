@@ -30,7 +30,7 @@ The processor integrates the following components into a complete datapath and c
 - Seven-segment Display
 
 <p align="center">
-  <img src="images/processor_block_diagram.png" width="700" alt="Processor Block Diagram">
+  <img width="400" height="300" alt="ALU1_BlockDiagram" src="https://github.com/user-attachments/assets/5877f242-3fce-48fc-b663-f0f9d650cf9f" />
 </p>
 
 ---
